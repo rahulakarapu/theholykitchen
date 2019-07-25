@@ -9,27 +9,33 @@ var oContainer = {
 };
   
 class Container extends React.Component {
+
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {};
+    // }
+
     render() {
         return (
-            <div className="containerLayout">
-                <section className="bgImage" style={ oContainer }>
-                        <div className= "containerFlex">
-                            
-                                <div>
-                                    <span className="containerTitle">CHINESE & THAI CUISINE</span>
-                                </div>
-                                        
-                            <div className="containerActionButtons">
-                                <Button variant="outline-primary">See Menu</Button>
-                                <Button variant="outline-primary">Order Online</Button>
-                                <Button variant="outline-primary">Reservations</Button>
-                            </div>
+            <section className="bgImage" style={ oContainer }>
+                    <div className= "containerFlex">
+                        <div>
+                            <span className="containerTitle">CHINESE & THAI CUISINE</span>
+                        </div>  
+                        <div className="containerActionButtons">
+                            <Button variant="outline-primary">See Menu</Button>
+                            <Button variant="outline-primary">Order Online</Button>
+                            <Button variant="outline-primary" onClick={this.fnMakeReservation}>Reservations</Button>
                         </div>
-                </section>
-            </div>
-        
+                    </div>
+            </section>
         );
     }
+
+    fnMakeReservation = (event) => {
+        alert("clicked");
+        debugger;
+    };
 }
 
 export default Container;

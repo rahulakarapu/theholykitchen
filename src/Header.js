@@ -4,7 +4,7 @@ import { Nav } from 'react-bootstrap';
 
 function Header(props) {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" className="headerContainer">
             <Navbar.Brand href="#home" className="hk-logo">Holy Kitchen</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

@@ -16,7 +16,7 @@ class App extends React.Component {
         <div className="AppContainer">
           {this.renderContainer()}
         </div>
-        <footer>
+        <footer className="AppFooter">
           {this.renderFooter()}
         </footer>
       </div>

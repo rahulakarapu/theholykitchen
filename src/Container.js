@@ -33,8 +33,7 @@ class Container extends React.Component {
     }
 
     fnMakeReservation = (event) => {
-        alert("clicked");
-        debugger;
+        
     };
 }
 

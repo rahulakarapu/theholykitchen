@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "df1daf0213835f8ff4dd2ebae9423d00",
+    "revision": "8bfcdc7c8a71452d0965dd0e4ad4dc6d",
     "url": "/theholykitchen/index.html"
   },
   {
-    "revision": "af37d69ae6fa218a130a",
+    "revision": "884e7c3ab8b407f3611b",
     "url": "/theholykitchen/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "9b770b6b26ace01d0431",
-    "url": "/theholykitchen/static/css/main.cbedd7f2.chunk.css"
+    "revision": "713795018eff5728fc93",
+    "url": "/theholykitchen/static/css/main.093e3dc9.chunk.css"
   },
   {
-    "revision": "af37d69ae6fa218a130a",
-    "url": "/theholykitchen/static/js/2.27e95713.chunk.js"
+    "revision": "884e7c3ab8b407f3611b",
+    "url": "/theholykitchen/static/js/2.587d23de.chunk.js"
   },
   {
-    "revision": "9b770b6b26ace01d0431",
-    "url": "/theholykitchen/static/js/main.893a82e2.chunk.js"
+    "revision": "713795018eff5728fc93",
+    "url": "/theholykitchen/static/js/main.e98b69d2.chunk.js"
   },
   {
     "revision": "760a68c9d1efe9ba453d",

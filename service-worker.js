@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/theholykitchen/precache-manifest.8edde9f8e3bfc164814f01afa5052b46.js"
+  "/theholykitchen/precache-manifest.40ebb27e4159695754ab96b0d551ffba.js"
 );
 
 self.addEventListener('message', (event) => {

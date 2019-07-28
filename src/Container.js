@@ -10,6 +10,8 @@ var oContainer = {
   
 class Container extends React.Component {
 
+    makeReservationButton = React.createRef();
+
     // constructor(props) {
     //     super(props);
     //     this.state = {};
@@ -19,13 +21,13 @@ class Container extends React.Component {
         return (
             <section className="bgImage" style={ oContainer }>
                     <div className= "containerFlex">
-                        <div>
-                            <span className="containerTitle">CHINESE & THAI CUISINE</span>
+                        <div className="containerTitle">
+                            <h1>CHINESE & THAI CUISINE</h1>
                         </div>  
                         <div className="containerActionButtons">
                             <Button variant="outline-primary">See Menu</Button>
                             <Button variant="outline-primary">Order Online</Button>
-                            <Button variant="outline-primary" onClick={this.fnMakeReservation}>Reservations</Button>
+                            <Button variant="outline-primary" onClick={this.fnMakeReservation} ref={this.makeReservationButton}>Reservations</Button>
                         </div>
                     </div>
             </section>
@@ -33,7 +35,8 @@ class Container extends React.Component {
     }
 
     fnMakeReservation = (event) => {
-        
+        console.log(this.makeReservationButton);
+        //debugger;
     };
 }
 

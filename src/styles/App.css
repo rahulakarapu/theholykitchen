@@ -121,8 +121,7 @@ html,body,#wrapper {
 }
 
 .signature {
-  display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   font-size: smaller;
 }
 

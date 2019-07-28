@@ -6,34 +6,59 @@ import Footer from './Footer.js'
 
 
 class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      "restaurantName": "The Holy Kitchen",
+      "restaurantInfo": {
+        "address": [
+          {
+            "id": "addressLine1",
+            "value": "Sri Krishna Nagar, Yousufguda"
+          },
+          {
+            "id": "addressLine2",
+            "value": "Near Metro Station"
+          },
+          {
+            "id": "addressLine2",
+            "value": "Hyderabad"
+          }
+        ],
+        "timings": [
+          {
+            "id": "weekdays",
+            "value": "Mon - Fri: 11am - 10pm"
+          },
+          {
+            "id": "weekends",
+            "value": "Sat - Sun: 11am - 12am"
+          }
+        ],
+        "mobileNumber": "+91 888 577 3637",
+        "email": "holykitchenindia@gmail.com",
+        "facebook": "https://www.facebook.com/theholykitchen/",
+        "instagram": "https://instagram.com/the.holykitchen?igshid=14r37cffbelj0"
+      }
+    }
+  }
   
   render() {
     return (
       <div id="wrapper">
         <header className="AppHeader">
-          {this.renderHeader()}
+          <Header />
         </header>
         <div className="AppContainer">
-          {this.renderContainer()}
+          <Container />
         </div>
         <footer className="AppFooter">
-          {this.renderFooter()}
+          <Footer footerInfo={this.state.restaurantInfo}/>
         </footer>
       </div>
     );
   }
-  
-  renderHeader() {
-    return <Header/>;
-  }
-
-  renderContainer() {
-    return <Container/>;
-  }
-  renderFooter() {
-    return <Footer />
-  }
-
 }
 
 export default App;

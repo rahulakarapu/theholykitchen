@@ -12,17 +12,33 @@ class Container extends React.Component {
 
     makeReservationButton = React.createRef();
 
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {};
-    // }
+    constructor(props) {
+        super(props);
+        this.state = {
+            title: 'C'
+        };
+    }
+
+    componentDidMount() {
+        console.log('starting magic...');
+        const animInterval = 50;
+        const charsToAdd = 'HINESE & THAI CUISINE'.split('');
+        for(let i = 0; i < charsToAdd.length; i++) {
+            setTimeout(() => {
+                this.setState({
+                    title: this.state.title + charsToAdd[i]
+                });
+            }, i*animInterval);
+        }
+    }
 
     render() {
+
         return (
             <section className="bgImage" style={ oContainer }>
                     <div className= "containerFlex">
                         <div className="containerTitle">
-                            <h1>CHINESE & THAI CUISINE</h1>
+                            <h1 className="animTitle">{this.state.title}</h1>
                         </div>  
                         <div className="containerActionButtons">
                             <Button variant="outline-primary">See Menu</Button>

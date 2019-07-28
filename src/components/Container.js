@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import Background from './RestaurantBG1.jpg';
+import Background from '../images/RestaurantBG1.jpg';
 
 //var App = require('./App');
 

@@ -32,7 +32,7 @@ const Footer = (props) => {
                 </div>
             </div>
             <div className="signature flexColumn">
-                <span>Site developed and maintained by <a href="https://www.linkedin.com/in/rahul-akarapu-aa76a087/">Rahul Akarapu</a>.</span>
+                <span>Site developed and maintained by Rahul & Ravi.</span>
             </div>
         </div>
     )

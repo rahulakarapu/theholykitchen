@@ -1,8 +1,10 @@
 import React from 'react';
-import '../styles/App.css';
-import Header from './Header.js'
-import Container from './Container.js'
-import Footer from './Footer.js'
+import '../styles/App.scss';
+import Header from './Header.js';
+import Container from './Container.js';
+import Footer from './Footer.js';
+import Contact from './Contact.js'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 class App extends React.Component {
@@ -46,17 +48,27 @@ class App extends React.Component {
   
   render() {
     return (
-      <div id="wrapper">
-        <header className="AppHeader">
-          <Header />
-        </header>
-        <div className="AppContainer">
-          <Container />
+      <Router>
+        <div id="wrapper">
+          {/* <header className="AppHeader">
+            <Header />
+          </header> */}
+          <div className="AppContainer">
+            <Switch>
+              <Route path="/home" render={() => (
+                <Container />
+              )} />
+              <Route path="/contact" Component={Contact} />
+              <Route path="/" render={() => (
+                <Container />
+              )} />
+            </Switch>
+          </div>
+          <footer className="AppFooter">
+            <Footer footerInfo={this.state.restaurantInfo}/>
+          </footer>
         </div>
-        <footer className="AppFooter">
-          <Footer footerInfo={this.state.restaurantInfo}/>
-        </footer>
-      </div>
+      </Router>
     );
   }
 }

@@ -1,22 +1,30 @@
+$footer-height: 100px;
+
 .App {
   text-align: center;
 }
 
 .AppContainer {
   overflow: hidden;
-  height: calc(100vh - 188px);
-}
-
-.AppHeader {
-  height: 56px;
+  height: calc(100vh - #{$footer-height});
 }
 
 .AppFooter {
-  height: 132px;
+  height: $footer-height;
+  overflow: hidden;
 }
 
-.hk-logo {
-  font-family: "Sarina", cursive;
+.followUs {
+  .fa {
+    margin: 8px;
+  }
+  min-width: 150px;
+}
+
+.contactUs {
+  .fa {
+    margin-right: 14px;
+  }
 }
 
 .backgroundImage {
@@ -35,12 +43,8 @@ html,body,#wrapper {
   position: relative;
 }
 .footer {
-  background-color: white;
-  color: black;
-  font-family: "BlinkMacSystemFont";
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .homectr {
@@ -67,6 +71,8 @@ html,body,#wrapper {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        align-items: center;
+        padding: 24px;
       }
     }
   }
@@ -84,7 +90,13 @@ html,body,#wrapper {
 .containerTitle {
   font-family: 'Montserrat', sans-serif;
   color: white;
-  padding: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 24px;
+
+  p {
+    margin: 0;
+  }
 }
 
 .btn--ghost {
@@ -94,10 +106,12 @@ html,body,#wrapper {
   color: white;
   padding-top: 10px;
   margin: 0 16px;
-  transition: border-bottom 300ms;
+  transition: border-bottom 300ms,
+              transform 300ms;
 
   &:hover {
     border-bottom: 2px solid white;
+    transform: scale(1.5);
   }
 
   &:focus {
@@ -108,9 +122,7 @@ html,body,#wrapper {
 .flexColumn {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 20px;
+  margin: 8px 24px;
 }
 
 .footerTitle {
@@ -139,7 +151,6 @@ html,body,#wrapper {
 }
 
 .fa {
-  margin-right: 25px;
   font-size: 25px;
 }
 
@@ -164,6 +175,7 @@ html,body,#wrapper {
 .signature {
   justify-content: flex-start;
   font-size: smaller;
+  align-self: center;
 }
 
 .containerFlex {

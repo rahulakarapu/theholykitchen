@@ -14,22 +14,22 @@ class Container extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: 'C'
+            title: 'CHINESE & THAI CUISINE'
         };
     }
 
-    componentDidMount() {
-        console.log('starting magic...');
-        const animInterval = 50;
-        const charsToAdd = 'HINESE & THAI CUISINE'.split('');
-        for(let i = 0; i < charsToAdd.length; i++) {
-            setTimeout(() => {
-                this.setState({
-                    title: this.state.title + charsToAdd[i]
-                });
-            }, i*animInterval);
-        }
-    }
+    // componentDidMount() {
+    //     console.log('starting magic...');
+    //     const animInterval = 50;
+    //     const charsToAdd = 'HINESE & THAI CUISINE'.split('');
+    //     for(let i = 0; i < charsToAdd.length; i++) {
+    //         setTimeout(() => {
+    //             this.setState({
+    //                 title: this.state.title + charsToAdd[i]
+    //             });
+    //         }, i*animInterval);
+    //     }
+    // }
 
     render() {
 
@@ -46,6 +46,9 @@ class Container extends React.Component {
                             <div style={{'margin': 'auto'}}></div>
                             <div className="containerTitle">
                                 <h1 className="animTitle">{this.state.title}</h1>
+                                <h3>Open Hours</h3>
+                                <p>Monday to Friday: 11:00 a.m. - 10:00 p.m.</p>
+                                <p>Saturday to Sunday: 11:00 a.m. - 12:00 a.m.</p>
                             </div> 
                         </div>
                     </div>

@@ -49,9 +49,6 @@ class App extends React.Component {
     return (
       <Router>
         <div id="wrapper">
-          {/* <header className="AppHeader">
-            <Header />
-          </header> */}
           <div className="AppContainer">
             <Switch>
               <Route path="/home" render={() => (

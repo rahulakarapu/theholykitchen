@@ -51,7 +51,10 @@ class Container extends React.Component {
                     </div>
                 </div>
                 <div className="homectr__map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d951.6374809379425!2d78.42574155819703!3d17.433374006169466!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8f385270f319f169!2sHOLY+KITCHEN!5e0!3m2!1sen!2sin!4v1564596642126!5m2!1sen!2sin" frameborder="0" style={{'border':0}} allowfullscreen></iframe>
+                    <iframe title="google_maps_location"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d951.6374809379425!2d78.42574155819703!3d17.433374006169466!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8f385270f319f169!2sHOLY+KITCHEN!5e0!3m2!1sen!2sin!4v1564596642126!5m2!1sen!2sin"
+                        frameborder="0" style={{'border':0}} allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         );

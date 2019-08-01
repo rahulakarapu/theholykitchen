@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/App.scss';
-import Header from './Header.js';
 import Container from './Container.js';
 import Footer from './Footer.js';
 import Contact from './Contact.js'

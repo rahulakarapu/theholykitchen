@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/App.scss';
-import Header from './Header.js';
 import Container from './Container.js';
 import Footer from './Footer.js';
 import Contact from './Contact.js'
@@ -50,9 +49,6 @@ class App extends React.Component {
     return (
       <Router>
         <div id="wrapper">
-          {/* <header className="AppHeader">
-            <Header />
-          </header> */}
           <div className="AppContainer">
             <Switch>
               <Route path="/home" render={() => (

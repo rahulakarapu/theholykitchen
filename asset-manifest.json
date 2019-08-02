@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/theholykitchen/static/css/main.a757a003.chunk.css",
-    "main.js": "/theholykitchen/static/js/main.e685b66e.chunk.js",
-    "main.js.map": "/theholykitchen/static/js/main.e685b66e.chunk.js.map",
+    "main.css": "/theholykitchen/static/css/main.1d00ba04.chunk.css",
+    "main.js": "/theholykitchen/static/js/main.761da60b.chunk.js",
+    "main.js.map": "/theholykitchen/static/js/main.761da60b.chunk.js.map",
     "runtime~main.js": "/theholykitchen/static/js/runtime~main.01b60668.js",
     "runtime~main.js.map": "/theholykitchen/static/js/runtime~main.01b60668.js.map",
     "static/css/2.266e55a5.chunk.css": "/theholykitchen/static/css/2.266e55a5.chunk.css",
-    "static/js/2.77c25291.chunk.js": "/theholykitchen/static/js/2.77c25291.chunk.js",
-    "static/js/2.77c25291.chunk.js.map": "/theholykitchen/static/js/2.77c25291.chunk.js.map",
+    "static/js/2.4305a98a.chunk.js": "/theholykitchen/static/js/2.4305a98a.chunk.js",
+    "static/js/2.4305a98a.chunk.js.map": "/theholykitchen/static/js/2.4305a98a.chunk.js.map",
     "index.html": "/theholykitchen/index.html",
-    "precache-manifest.7f9e480327278a066020f20bf2502193.js": "/theholykitchen/precache-manifest.7f9e480327278a066020f20bf2502193.js",
+    "precache-manifest.df4e4960c0581c25a7d561fb1e8bdd26.js": "/theholykitchen/precache-manifest.df4e4960c0581c25a7d561fb1e8bdd26.js",
     "service-worker.js": "/theholykitchen/service-worker.js",
     "static/css/2.266e55a5.chunk.css.map": "/theholykitchen/static/css/2.266e55a5.chunk.css.map",
-    "static/css/main.a757a003.chunk.css.map": "/theholykitchen/static/css/main.a757a003.chunk.css.map",
+    "static/css/main.1d00ba04.chunk.css.map": "/theholykitchen/static/css/main.1d00ba04.chunk.css.map",
     "static/media/RestaurantBG1.jpg": "/theholykitchen/static/media/RestaurantBG1.56dfe7cd.jpg"
   }
 }
